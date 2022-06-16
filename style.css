@@ -1,0 +1,119 @@
+html{
+  font-size: 62.5%; /*  */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*LAYOUT*/
+
+.grade{
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'main'
+  'footer';
+  grid-template-columns: 1fr;
+  grid-auto-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+.row { /*para colocar os conteúdos lada a lado*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+/* HEADER*/
+
+header{
+  grid-area: header;
+  background-color: #203040;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover {
+  color: #ff8000;
+}
+header a{
+  color: #ffff;
+  padding: 1rem;
+}
+a.marca{
+  color: #ffff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+  /*MAIN*/
+
+main{
+  grid-area: main;
+  padding: 1rem;
+}
+
+/*FOOTER*/
+
+footer{
+grid-area: footer;
+background-color: #203040;
+color: #ffff;
+}
+
+/*IMAGENS*/
+
+img {
+  border-radius: 0.5rem;
+
+}
+img .medium {
+  max-width: 29rem;
+  width: 100%;
+}
+
+/*CARTÃO*/
+
+.cartao {
+  border: 0.1 rem;
+  background-color: #f8f8f8;
+  border-radius: 00.5rem;
+  margin: 1rem;
+  border-style: solid;
+  border-color: #c0c0c0;
+}
+.cartao-body {
+padding: 1rem;
+}
+.cartao-body > * {   /*todos os elementos filhos da classe terão os seguintes valores*/
+margin-bottom: 00.5rem;
+}
+
+.preco {
+  font-size: 2rem;
+}
+
+.avaliacao span{ 
+  color: #f0c040 ;
+  margin: 0.1rem;
+}
